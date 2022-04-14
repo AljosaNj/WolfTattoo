@@ -18,13 +18,13 @@ export const links = [
   },
   {
     id: 4,
-    url: '/studio',
-    text: 'studio',
+    url: '#contact',
+    text: 'contact',
   },
   {
     id: 5,
-    url: '/contact',
-    text: 'contact',
+    url: 'studio',
+    text: 'studio',
   },
 ];
 

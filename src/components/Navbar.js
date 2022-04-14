@@ -7,7 +7,16 @@ import logo1 from "../pictures/logo1.png"
 
 const Navbar = () => {
 
+const handleClick = (e) => {
+  e.preventDefault()
+  const target = e.target.getAttribute('href')
+  const location = document.querySelector(target).offsetTop 
 
+  window.scrollTo({
+    left: 0,
+    top: location -64,
+  })
+}
 
 
   const [showLinks, setShowLinks] = useState(false);
@@ -38,8 +47,8 @@ const Navbar = () => {
             {links.map((link) => {
               const { id, url, text } = link;
               return (
-                <li key={id}  >
-                  <a href={url}>{text}</a>
+                <li  >
+                  <a key={id}   href={url} onClick={handleClick}>{text}</a>
                 </li>
               );
             })}
