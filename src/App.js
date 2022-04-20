@@ -5,7 +5,8 @@ import ItemSlider from './components/ItemSlider';
 import About from './components/About';
 import MyBio from './components/MyBio';
 import Contact from './components/Contact';
-import Form from './components/Form';
+import ContactForm from './components/ContactForm';
+
 function App() {
   return (
   
@@ -17,15 +18,16 @@ function App() {
       <section className='container' id='tattoos'>
      <ItemSlider  />
     </section>
+    
       <section className='about' id='about'>
-        <About  />
+       <About  />
        
     </section>
-     <MyBio/>
+      <MyBio/>
     <section className='contact' id='contact'>
       <Contact/>
     </section>
-     <Form/>
+    <ContactForm/>
      
     
     </main>

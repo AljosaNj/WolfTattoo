@@ -47,8 +47,8 @@ const handleClick = (e) => {
             {links.map((link) => {
               const { id, url, text } = link;
               return (
-                <li  >
-                  <a key={id}   href={url} onClick={handleClick}>{text}</a>
+                <li key={id}  >
+                  <a   href={url} onClick={handleClick}>{text}</a>
                 </li>
               );
             })}
