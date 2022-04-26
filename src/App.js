@@ -6,6 +6,8 @@ import About from './components/About';
 import MyBio from './components/MyBio';
 import Contact from './components/Contact';
 import ContactForm from './components/ContactForm';
+import Idea from './components/Idea';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -28,7 +30,8 @@ function App() {
       <Contact/>
     </section>
     <ContactForm/>
-     
+    <Idea/>
+     <Footer/>
     
     </main>
   );
