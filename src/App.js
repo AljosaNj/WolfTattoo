@@ -30,7 +30,10 @@ function App() {
       <Contact/>
     </section>
     <ContactForm/>
-    <Idea/>
+    
+      <Idea/>
+   
+    
      <Footer/>
     
     </main>

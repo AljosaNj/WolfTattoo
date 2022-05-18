@@ -1,0 +1,100 @@
+.fotter {
+ margin-top: 3rem;
+ width: 100%;
+ height: 85vh;
+
+ display: grid;
+ padding-top: 20px;
+ justify-content: center;
+ align-items: center;
+ gap: 25px;
+}
+
+.logof {
+ font-size: 0.75rem;
+}
+
+/*.rowf {
+  margin-left: 6rem;
+
+}*/
+
+.ali {
+ color: $grey;
+ font-family: $font-orbiton;
+}
+
+.ali:hover {
+ color: $cap;
+}
+
+.rowc {
+ padding-right: 3rem;
+}
+
+.namef {
+ font-family: $font-orbiton;
+}
+
+.end {
+ margin-top: 1rem;
+ justify-content: center;
+ display: flex;
+ align-items: center;
+}
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+
+ .fotter {
+  margin-top: 0rem;
+  width: 100%;
+  height: 55vh;
+  //background-color: $black;
+  display: flex;
+  padding-top: 20px;
+  //justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 55px;
+
+
+ }
+
+ .logof {
+  font-size: 1.35rem;
+ }
+
+ .rowf {
+  margin-left: 3rem;
+
+ }
+
+ .ali {
+  color: $grey;
+  font-family: $font-orbiton;
+ }
+
+ .ali:hover {
+  color: $cap;
+ }
+
+ .rowc {
+  padding-right: 3rem;
+ }
+
+ .namef {
+  font-family: $font-orbiton;
+ }
+
+ .end {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+ }
+
+}

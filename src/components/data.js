@@ -21,11 +21,11 @@ export const links = [
     url: '#contact',
     text: 'contact',
   },
-  {
+ /* {
     id: 5,
-    url: 'studio',
-    text: 'studio',
-  },
+    url: 'ideacon',
+    text: 'idea',
+  },*/
 ];
 
 export const social = [
