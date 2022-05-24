@@ -1,13 +1,12 @@
 import React from 'react'
-import logo from '../pictures/logohead.png'
 import {ImPhone} from 'react-icons/im'
 
 
 const Header = () => {
   return (
-    <div className='header'>
+   
      <article className='textandlogo'>
-       <img src={logo} className="logoheader" alt="logo" />
+      <div className='container'>
        <h1 className='title'>WELCOME</h1>
        <p className='textpar'>Wolf Tattoo Studio -Street Green 21</p>
             <a href="tel: +363636/333-444"
@@ -15,9 +14,10 @@ const Header = () => {
         <ImPhone/>
       +363636/333-444
       </a>
+      </div>
      </article>
 
-    </div>
+    
   )
 }
 
