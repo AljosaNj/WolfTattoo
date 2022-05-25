@@ -1,24 +1,29 @@
-import React from 'react';
+import React from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 
-const ContactForm = () => {
- const [state, handleSubmit] = useForm("moqrkbyy");
+
+const MesForm = () => {
+const [state, handleSubmit] = useForm("moqrkbyy");
   if (state.succeeded) {
       return <h4 className='backpara'>Thanks for the Message, we will contact you!</h4>;
   }
 
+
+
   return (
-    <div className='formcont'>
-     <h2 className='formtext'>Send Us a Message</h2>
+    
+<div className='formcont'>
+     
       <form className='form' onSubmit={handleSubmit}>
         <label className='label' htmlFor="email">
-       Name
+      
       </label>
       <input
       className='input'
         id="name"
         type="name" 
         name="name"
+        placeholder='name'
       />
       <ValidationError 
         prefix="Email" 
@@ -29,13 +34,14 @@ const ContactForm = () => {
 
 
       <label className='label' htmlFor="email">
-        Email Address
+       
       </label>
       <input
       className='input'
         id="email"
         type="email" 
         name="email"
+        placeholder='email'
       />
       <ValidationError 
         prefix="Email" 
@@ -43,29 +49,34 @@ const ContactForm = () => {
         errors={state.errors}
       />
        <label className='label' htmlFor="email">
-       Message
+       
       </label>
       <textarea
        className='textarea'
         id="message"
         name="message"
+        placeholder='message'
       />
       <ValidationError 
         prefix="Message" 
         field="message"
         errors={state.errors}
       />
-      <button className='input' type="submit" disabled={state.submitting}>
+      <button className='button' type="submit" disabled={state.submitting}>
         Submit
       </button>
     </form>
+
+
+
+
     </div>
-  );
+  )
 }
 
 function FormApp() {
   return (
-    <ContactForm />
+    <MesForm/>
   );
 }
 

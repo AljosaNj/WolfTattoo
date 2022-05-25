@@ -5,7 +5,7 @@ import ItemSlider from './components/ItemSlider';
 import About from './components/About';
 import MyBio from './components/MyBio';
 import Contact from './components/Contact';
-import ContactForm from './components/ContactForm';
+import MesForm from './components/MesForm';
 import Idea from './components/Idea';
 import Footer from './components/Footer';
 
@@ -29,7 +29,7 @@ function App() {
     <section className='contact' id='contact'>
       <Contact/>
     </section>
-    <ContactForm/>
+     <MesForm/>
     
       <Idea/>
    
