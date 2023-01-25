@@ -10,6 +10,7 @@ const Footer = () => {
      </div>
    
     <div className='rowt'>
+      
       <h3 className='namef'>STAY IN TOUCH </h3>
        <hr/>
       <ul className='ull'>
